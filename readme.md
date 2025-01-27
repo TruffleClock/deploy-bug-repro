@@ -1,18 +1,21 @@
 # Steps to repro
 
 - clone this repo
-- deploy a project to Railway with 2 services: backend and tika
-- set backend watch path to
+- deploy a project to Railway with 2 services: `backend` and `tika`
+- set `backend` watch path to
     ```
     apps/backend/**
     ```
 
-- set tika watch path to 
-
+- set `tika` watch path to 
     ```
     apps/backend/**
     apps/tika/**
     ```
+
+- make a change to `apps/backend/app.js`
+
+- `backend` deploys but `tika` does not
 
 # Context
 
